@@ -1,0 +1,13 @@
+#   a113_numeric_comparison.py
+#   Predict what the following code will do.
+import turtle as trtl
+
+painter = trtl.Turtle()
+
+for line in range(3):
+  painter.forward(100)
+  painter.right(120)
+
+wn = trtl.Screen()
+wn.mainloop()
+#The program will move forward and then right, 3 consecutive times.
