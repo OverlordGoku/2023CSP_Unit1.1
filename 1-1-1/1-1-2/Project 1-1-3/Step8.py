@@ -4,7 +4,7 @@ import turtle as trtl
 
 painter = trtl.Turtle()
 painter.shape("circle")
-for line in range(3):
+for line in range(12):
     painter.stamp()
     painter.forward(100)
     painter.left(45)
