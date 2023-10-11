@@ -3,15 +3,15 @@ import turtle as trtl
 # instead of a descriptive name of the turtle such as painter,
 # a less useful variable name x is used
 Spider = trtl.Turtle()
-spider.pensize(40)
-spider.circle(20)
-Legs = 6
+Spider.pensize(40)
+Spider.circle(20)
+Legs = 8
 LengthOfLegs = 70
-Spacing = 380 / Legs
+Spacing = 360 / Legs
 Spider.pensize(5)
-n = 0
+Number = 0
 while (Number < Legs):
-  Spider.goto(0, 0)
+  Spider.goto(0, 20)
   Spider.setheading(Spacing * Number)
   Spider.forward(LengthOfLegs)
   Number = Number + 1
