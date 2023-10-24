@@ -12,18 +12,22 @@ turtle_colors = ["red", "blue", "green", "orange", "purple", "gold"]
 
 for s in turtle_shapes:
   t = trtl.Turtle(shape=s)
+  t.penup()
+  t.color(turtle_colors.pop())
   my_turtles.append(t)
 
 #Starting position
 startx = 0
 starty = 0
-turtle.penup()
-turtle.pendown()
+
 #Commands for turtle to go to the starting position
 for t in my_turtles:
   t.goto(startx, starty)
+  t.setheading(direction)
+  t.pendown()
   t.right(45)
   t.forward(50)
+  direction = t.heading()
   start_x = t.xcor()
   start_y = t. ycor()
 #Changing the starting position
