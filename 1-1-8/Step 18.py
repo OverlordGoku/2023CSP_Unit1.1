@@ -27,16 +27,23 @@ for s in turtle_shapes:
     vt.penup()
     new_color = vert_colors.pop()
     vt.fillcolor(new_color)
+    vt.speed(0)
     vt.goto(-tloc, 350)
+    ht.speed(5)
     vt.setheading(270)
 
     tloc += 50
 
 # TODO: move turtles across and down screen, stopping for collisions
-"""
+distance = 3
 for step in range(50):
-	# do something
-"""
+    for ht in horiz_ turtles:
+    for vt in vert_turtles:
+    ht.forward(distance)
+    vt.forward(distance)
+
+# Look for Collisions
+
 
 wn = trtl.Screen()
 wn.mainloop()
