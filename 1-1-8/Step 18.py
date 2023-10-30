@@ -41,13 +41,17 @@ collisionColor = "grey"
 collisionShape = "circle"
 for step in range(50):
     for ht in horiz_turtles:
-    for vt in vert_turtles:
-    ht.forward(distance)
-    vt.forward(distance)
+        for vt in vert_turtles:
+            ht.forward(distance)
+            vt.forward(distance)
 
-# Look for Collisions
-    if(abs(ht.xcor() - vt.xcor() < pixelSize):
-    if(abs(ht.ycor() - vt.ycor() < pixelSize):
-        vt.hideturtle()
+        # Look for Collisions
+        if(abs(ht.xcor() - vt.xcor()) < pixelSize):
+            if(abs(ht.ycor() - vt.ycor()) < pixelSize):
+                vt.hideturtle()
+                ht.shape(collisionShape)
+                ht.fillcolor(collisionColor)
+                horiz_turtles.remove(ht)
+                vert_turtles.remove(vt)
 wn = trtl.Screen()
 wn.mainloop()
