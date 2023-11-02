@@ -12,7 +12,7 @@ painter.goto(x, y)
 
 painter.pendown()
 
-for numStars in range(5):
+for numStars in range(10):
     for triangle in range(15):
         painter.pendown()
         painter.forward(50)
@@ -21,6 +21,7 @@ for numStars in range(5):
         painter.penup()
     x += 50
     y += 50
+    painter.left(50)
     painter.goto(x, y)
 
 
