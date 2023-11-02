@@ -5,25 +5,32 @@ painter = trtl.Turtle()
 painter.speed(100)
 
 painter.penup()
-x = -100
-y = 0
+x = -475
+y = -372
 painter.goto(x, y)
 
 
 painter.pendown()
 
-for numStars in range(10):
+painter.color("green")
+
+for numStars in range(25):
     for triangle in range(15):
         painter.pendown()
         painter.forward(50)
         painter.left(120)
         painter.left(45)
         painter.penup()
-    x += 50
-    y += 50
+    x += 57
+    y += 45
     painter.left(50)
     painter.goto(x, y)
 
-
+    rem = numStars % 2
+    if(rem==0):
+        painter.color("blue")
+    else:
+        painter.color("green")
+        rem+=1
 wn = trtl.Screen()
 wn.mainloop()
